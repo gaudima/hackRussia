@@ -85,9 +85,15 @@ public class ControlsScript : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape) && cameraCanvas.activeInHierarchy == false)
         {
-            Debug.Log("Back pressed");
-            cameraCanvas.SetActive(true);
-            shareCanvas.SetActive(false);
+            backPressed();
         }
+    }
+
+    public void backPressed()
+    {
+        Debug.Log("Back pressed");
+        cameraCanvas.SetActive(true);
+        shareCanvas.SetActive(false);
+        
     }
 }
