@@ -45,6 +45,29 @@ public class ControlsScript : MonoBehaviour {
         lastFile = filename;
         screenSprite = Sprite.Create(screenShot, new Rect(0, 0, resWidth, resHeight), new Vector2(0.5f, 0.5f), 1.0f);
         img.sprite = screenSprite;
+        if (Screen.orientation == ScreenOrientation.Portrait || Screen.orientation == ScreenOrientation.PortraitUpsideDown)
+        {
+            if (img && img.sprite.rect.width > img.sprite.rect.height)
+            {
+                img.GetComponent<RectTransform>().sizeDelta = new Vector2(1920 / 16 * 9, 1080 / 16 * 9);
+            }
+            else
+            {
+                img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920 / 9 * 16, 1920);
+            }
+
+        }
+        else if (Screen.orientation == ScreenOrientation.LandscapeLeft || Screen.orientation == ScreenOrientation.LandscapeRight)
+        {
+            if (img && img.sprite.rect.width <= img.sprite.rect.height)
+            {
+                img.GetComponent<RectTransform>().sizeDelta = new Vector2(1080 / 16 * 9, 1080);
+            }
+            else
+            {
+                img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920, 1080);
+            }
+        }
         cameraCanvas.SetActive(false);
         shareCanvas.SetActive(true);
     }
@@ -63,6 +86,7 @@ public class ControlsScript : MonoBehaviour {
             cd.Init(CameraDevice.CameraDirection.CAMERA_BACK);
         }
         cd.Start();
+        cd.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
     }
 
     public void openShareDialog()
