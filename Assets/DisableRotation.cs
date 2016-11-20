@@ -33,28 +33,33 @@ public class DisableRotation : MonoBehaviour {
                 setAnchorsAndPos(chld[0], 0.5f, 0.0f, 0, 139);
                 setAnchorsAndPos(chld[1], 1.0f, 0.0f, -136, 139);
                 gameObject.GetComponent<UnityEngine.UI.CanvasScaler>().matchWidthOrHeight = 0.5f;
-                if (img && img.sprite.rect.width > img.sprite.rect.height)
+                if (img)
                 {
-                    img.GetComponent<RectTransform>().sizeDelta = new Vector2(1920 / 16 * 9, 1080 / 16 * 9);
+                    if (img.sprite.rect.width > img.sprite.rect.height)
+                    {
+                        img.GetComponent<RectTransform>().sizeDelta = new Vector2(1920 / 16 * 9, 1080 / 16 * 9);
+                    }
+                    else
+                    {
+                        img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920 / 9 * 16, 1920);
+                    }
                 }
-                else
-                {
-                    img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920 / 9 * 16, 1920);
-                }
-
             }
             else if (orient == ScreenOrientation.LandscapeLeft || orient == ScreenOrientation.LandscapeRight)
             {
                 setAnchorsAndPos(chld[0], 1.0f, 0.5f, -136, 0);
                 setAnchorsAndPos(chld[1], 1.0f, 1.0f, -136, -139);
                 gameObject.GetComponent<UnityEngine.UI.CanvasScaler>().matchWidthOrHeight = 0;
-                if (img && img.sprite.rect.width <= img.sprite.rect.height)
+                if (img)
                 {
-                    img.GetComponent<RectTransform>().sizeDelta = new Vector2(1080 / 16 * 9, 1080);
-                }
-                else
-                {
-                    img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920, 1080);
+                    if (img.sprite.rect.width <= img.sprite.rect.height)
+                    {
+                        img.GetComponent<RectTransform>().sizeDelta = new Vector2(1080 / 16 * 9, 1080);
+                    }
+                    else
+                    {
+                        img.GetComponent<RectTransform>().sizeDelta = new Vector3(1920, 1080);
+                    }
                 }
             }
         }

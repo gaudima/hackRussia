@@ -1,87 +1,91 @@
 fileFormatVersion: 2
-guid: e64fc1238dd85364185dfb1ccfa1c3b9
-timeCreated: 1479580245
+guid: 4f09c348a9bb60a4b992f85000b4d402
+timeCreated: 1479596714
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Armature
-    100004: Bone
-    100006: Bone.001
-    100008: Bone.002
-    100010: Bone.003
-    100012: Bone.003_end
-    100014: Bone.004
-    100016: Bone.005
-    100018: Bone.006
-    100020: Bone.006_end
-    100022: Bone.007
-    100024: Bone.007_end
-    100026: Bone.008
-    100028: Bone.009
-    100030: Bone.009_end
-    100032: Bone.010
-    100034: Bone.011
-    100036: Bone.012
-    100038: Bone.012_end
-    100040: Bone.013
-    100042: Bone.014
-    100044: Bone.014_end
-    100046: Bone.015
-    100048: Bone.015_end
-    100050: Bone.016
-    100052: Bone.017
-    100054: Bone.017_end
-    100056: Bone.018
-    100058: Bone.018_end
-    100060: Bone.020
-    100062: Bone.020_end
-    100064: Bone.021
-    100066: BronevikHi
+    100000: Armature
+    100002: Bone
+    100004: Bone.001
+    100006: Bone.002
+    100008: Bone.003
+    100010: Bone.003_end
+    100012: Bone.004
+    100014: Bone.005
+    100016: Bone.006
+    100018: Bone.006_end
+    100020: Bone.007
+    100022: Bone.007_end
+    100024: Bone.008
+    100026: Bone.009
+    100028: Bone.009_end
+    100030: Bone.010
+    100032: Bone.011
+    100034: Bone.012
+    100036: Bone.012_end
+    100038: Bone.013
+    100040: Bone.014
+    100042: Bone.014_end
+    100044: Bone.015
+    100046: Bone.015_end
+    100048: Bone.016
+    100050: Bone.017
+    100052: Bone.017_end
+    100054: Bone.018
+    100056: Bone.018_end
+    100058: Bone.020
+    100060: Bone.020_end
+    100062: Bone.021
+    100064: BronevikHi
+    100066: //RootNode
     100068: LeninLow
-    400000: //RootNode
-    400002: Armature
-    400004: Bone
-    400006: Bone.001
-    400008: Bone.002
-    400010: Bone.003
-    400012: Bone.003_end
-    400014: Bone.004
-    400016: Bone.005
-    400018: Bone.006
-    400020: Bone.006_end
-    400022: Bone.007
-    400024: Bone.007_end
-    400026: Bone.008
-    400028: Bone.009
-    400030: Bone.009_end
-    400032: Bone.010
-    400034: Bone.011
-    400036: Bone.012
-    400038: Bone.012_end
-    400040: Bone.013
-    400042: Bone.014
-    400044: Bone.014_end
-    400046: Bone.015
-    400048: Bone.015_end
-    400050: Bone.016
-    400052: Bone.017
-    400054: Bone.017_end
-    400056: Bone.018
-    400058: Bone.018_end
-    400060: Bone.020
-    400062: Bone.020_end
-    400064: Bone.021
-    400066: BronevikHi
+    100070: Point
+    400000: Armature
+    400002: Bone
+    400004: Bone.001
+    400006: Bone.002
+    400008: Bone.003
+    400010: Bone.003_end
+    400012: Bone.004
+    400014: Bone.005
+    400016: Bone.006
+    400018: Bone.006_end
+    400020: Bone.007
+    400022: Bone.007_end
+    400024: Bone.008
+    400026: Bone.009
+    400028: Bone.009_end
+    400030: Bone.010
+    400032: Bone.011
+    400034: Bone.012
+    400036: Bone.012_end
+    400038: Bone.013
+    400040: Bone.014
+    400042: Bone.014_end
+    400044: Bone.015
+    400046: Bone.015_end
+    400048: Bone.016
+    400050: Bone.017
+    400052: Bone.017_end
+    400054: Bone.018
+    400056: Bone.018_end
+    400058: Bone.020
+    400060: Bone.020_end
+    400062: Bone.021
+    400064: BronevikHi
+    400066: //RootNode
     400068: LeninLow
+    400070: Point
     2300000: BronevikHi
     3300000: BronevikHi
     4300000: LeninLow
     4300002: BronevikHi
     7400000: Armature|ArmatureAction
-    7400002: Armature|BronevikHiAction
-    7400004: BronevikHi|BronevikHiAction
+    7400002: Armature|ArmatureAction.001
+    7400004: Armature|BronevikHiAction
+    7400006: BronevikHi|ArmatureAction
+    7400008: BronevikHi|BronevikHiAction
     9500000: //RootNode
     13700000: LeninLow
   materials:

@@ -107,9 +107,16 @@ public class ControlsScript : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && cameraCanvas.activeInHierarchy == false)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            backPressed();
+            if (cameraCanvas.activeInHierarchy)
+            {
+                Application.Quit();
+            }
+            else
+            {
+                backPressed();
+            }
         }
     }
 
